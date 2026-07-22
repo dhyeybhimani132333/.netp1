@@ -1,0 +1,41 @@
+using System;
+namespace StudentAdmissionSystem
+{
+class Student
+{
+private int id;
+private string name;
+private string course;
+private double fees;
+// Constructor
+public Student(int id, string name, string course, double fees)
+{
+this.id = id;
+this.name = name;
+this.course = course;
+this.fees = fees;
+}
+// Method to display student details
+public void DisplayDetails()
+{
+Console.WriteLine(&quot;------ Student Admission Details ------&quot;);
+Console.WriteLine(&quot;Student ID : &quot; + id);
+Console.WriteLine(&quot;Student Name : &quot; + name);
+Console.WriteLine(&quot;Course : &quot; + course);
+Console.WriteLine(&quot;Fees : &quot; + fees);
+Console.WriteLine();
+}
+}
+class Program
+{
+static void Main(string[] args)
+{
+
+Student s1 = new Student(101, &quot;DHYEY BHIMANI&quot;, &quot;Computer Science&quot;, 50000);
+Student s2 = new Student(102, &quot;YASH SEJPAL&quot;, &quot;Information Technology&quot;, 45000);
+s1.DisplayDetails();
+s2.DisplayDetails();
+Console.ReadKey();
+}
+}
+}
