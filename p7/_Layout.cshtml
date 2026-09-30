@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewBag.Title - Feedback Management</title>
+
+    @Styles.Render("~/Content/css")
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+        }
+
+        .main-container {
+            width: 550px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #cccccc;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Feedback Management System</h1>
+        <p>ASP.NET MVC Practical</p>
+    </div>
+
+    <div class="main-container">
+
+        @RenderBody()
+
+    </div>
+
+    <div class="footer">
+        <p>Feedback Management System</p>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
