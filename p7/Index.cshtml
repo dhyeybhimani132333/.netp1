@@ -1,0 +1,14 @@
+@model P7.Models.Feedback
+
+@{
+    ViewBag.Title = "Feedback";
+}
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.Message
+    </div>
+}
+
+@Html.Partial("_FeedbackForm", Model)
